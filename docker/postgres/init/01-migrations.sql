@@ -1,0 +1,6 @@
+CREATE TABLE migrations (
+    id SERIAL PRIMARY KEY,
+    name TEXT UNIQUE NOT NULL,
+    step INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
